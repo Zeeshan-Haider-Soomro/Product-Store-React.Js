@@ -14,6 +14,7 @@ const CartProduct = ({ data }) => {
     <div>
       <Card
         hoverable
+        className="p-5"
         cover={
           <img
             className="w-[150px] h-[150px] object-contain "
