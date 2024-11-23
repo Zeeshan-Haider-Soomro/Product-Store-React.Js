@@ -26,7 +26,7 @@ const Header = () => {
   return (
     <div>
         <header class='flex shadow-md py-4 px-4 sm:px-10 bg-white font-[sans-serif] min-h-[70px] tracking-wide  z-50 fixed w-[100%] top-0 left-0'>
-  <div class='flex flex-wrap items-center justify-between gap-5 w-full'>
+  <div class='flex flex-wrap items-center justify-around gap-5 w-full p-3'>
     <a className='flex items-center text-4xl font-extrabold' href="javascript:void(0)"><img src="/productStore.webp" alt="logo" class='w-10' />Product Store
     </a>
 
@@ -53,15 +53,11 @@ const Header = () => {
           <a href='javascript:void(0)'
             class='hover:text-[#007bff] text-[#007bff] block font-semibold text-[15px]'>Home</a>
         </li>
-        <li class='max-lg:border-b border-gray-300 max-lg:py-3 px-3'><a href='javascript:void(0)'
-            class='hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]'>Team</a>
-        </li>
+    
         <li class='max-lg:border-b border-gray-300 max-lg:py-3 px-3'><a href='javascript:void(0)'
             class='hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]'>Feature</a>
         </li>
-        <li class='max-lg:border-b border-gray-300 max-lg:py-3 px-3'><a href='javascript:void(0)'
-            class='hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]'>Blog</a>
-        </li>
+     
         <li class='max-lg:border-b border-gray-300 max-lg:py-3 px-3'><a href='javascript:void(0)'
             class='hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]'>About</a>
         </li>
@@ -74,7 +70,7 @@ const Header = () => {
     <div class='flex max-lg:ml-auto space-x-3'>
     <Badge count={cartData?.length}>
     {/* <Button type="" className='bg-gray-500 text-white text-2xl p-5' > */}
-        <ShoppingCartOutlined onClick={showDrawer} className='text-3xl '/>
+        <ShoppingCartOutlined onClick={showDrawer} className='text-4xl '/>
       {/* </Button> */}
     </Badge>
        
